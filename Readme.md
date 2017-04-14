@@ -1,11 +1,14 @@
 
 # 1. first  you should get the office-datasets  from  https://drive.google.com/file/d/0B4IapRTv9pJ1WGZVd1VDMmhwdlE/view
+-----------
 
 # 2. then build the one_hot and zero_hot dataset from original office-datasets
 ## ./build_data_set.sh your_path_of_office-datasets
+-----------
 
 # 3. then you should resize your picture to [299,299]
 ## python ./resize_all_image.py  --dataset_path  your_path  --size [299,299]
+-----------
 
 
 
@@ -13,14 +16,15 @@
 ## tensorflow
 ## scipy
 ## numpy
+-----------
 
 
 # 5.change some area of my_inception_v3.py
-
 ## 运行程序之前先修改my_inception_v3.py中的 checkpoint_path 和 dataset_path
 ###  (before run ,please change the checkpoint_path and dataset_path to be yours)
 ##  另外保证tf_inception_v3.py 和 my_inception_v3.py 在同一文件夹下面
 ###  (and ensure tf_inception_v3.py and my_inception_v3.py are in same path)
+-----------
 
 
 
