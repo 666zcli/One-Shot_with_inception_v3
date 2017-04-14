@@ -5,6 +5,8 @@ from scipy.misc import imread,imresize
 import os
 import tensorflow as tf
 from tf_inception_v3 import inception_v3
+import sys
+
 slim=tf.contrib.slim
 
 
@@ -55,14 +57,10 @@ checkpoint_exclude_scopes="InceptionV3/Logits,InceptionV3/AuxLogits"
 
 
 
-
-
 #### train scope
 #trainable_scopes="InceptionV3/Logits,InceptionV3/AuxLogits"    # 先训练这几个层，其他的层保持ckpt的参数不变
 trainable_scopes="all"    #表示训练所有层
 trunc_normal        = lambda stddev: tf.truncated_normal_initializer(0.0, stddev)
-
-
 
 
 
@@ -441,5 +439,7 @@ def get_variables_to_train(trainable_scopes=trainable_scopes):
     return variables_to_train
 
 
-if __name__=='__main__':
-   train_test(istrain=is_train) 
+
+### train and test 
+train_test(istrain=is_train) 
+
