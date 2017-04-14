@@ -25,22 +25,22 @@
 
 
 # 6.zero-shot
-##必须先做zero-shot实验,在my_inception_v3.py中确认设置如下
+## 必须先做zero-shot实验,在my_inception_v3.py中确认设置如下
 ###  (must do zero-shot first ,please ensure these in my_inception_v3.py)
-####path_train=paths_source
-####path_test =paths_target_test
-####checkpoint_exclude_scopes="InceptionV3/Logits,InceptionV3/AuxLogits"
-##确认设置跟上面一样后，运行  my_inception_v3.py
-##(after ensure , python ./my_inception_v3.py)
+#### path_train=paths_source
+#### path_test =paths_target_test
+#### checkpoint_exclude_scopes="InceptionV3/Logits,InceptionV3/AuxLogits"
+## 确认设置跟上面一样后，运行  my_inception_v3.py
+## (after ensure , python ./my_inception_v3.py)
 
 
 
 
 # 7.one-shot 
-####path_train=paths_target_train
-####path_test =paths_target_test
-####checkpoint_exclude_scopes=None 
-##使用上面的设置，运行   my_inception_v3.py
+#### path_train=paths_target_train
+#### path_test =paths_target_test
+#### checkpoint_exclude_scopes=None 
+## 使用上面的设置，运行   my_inception_v3.py
 ## use the above settiings,   
 ## python ./my_inception_v3.py
 
