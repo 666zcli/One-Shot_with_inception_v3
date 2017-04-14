@@ -2,7 +2,7 @@
 # 1. first  you should get the office-datasets  from  https://drive.google.com/file/d/0B4IapRTv9pJ1WGZVd1VDMmhwdlE/view
 
 # 2. then build the one_hot and zero_hot dataset from original office-datasets
-## ./build_data_set.sh    your_path_of_office-datasets
+## ./build_data_set.sh your_path_of_office-datasets
 
 # 3. then you should resize your picture to [299,299]
 ## python ./resize_all_image.py  --dataset_path  your_path  --size [299,299]
