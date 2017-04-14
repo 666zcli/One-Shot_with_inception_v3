@@ -1,5 +1,6 @@
 #coding:utf-8
-workpath= $1
+workpath=$1
+echo 'your dataset_path is  '$workpath
 #'/home/gui/work2017/Research_of_transfer_Learning/dataSets/office-dataset/'
 cate_arr=("back_pack"  "bike_helmet"  'bottle'  'desk_lamp'  'desktop_computer'  'file_cabinet'  'keyboard' 'laptop_computer'  'mobile_phone'  'mouse'  'printer'  'projector'  'ring_binder'  'ruler'  'speaker' 'trash_can')
 path_source=${workpath}'amazon_source/'
@@ -72,6 +73,7 @@ done
 
 
 
+## resize pictures 
 echo '  resize images to             299   '
-python ./resize_all_images.py --size 299
+python ./resize_all_images.py --dataset_path $workpath  --size 299
 

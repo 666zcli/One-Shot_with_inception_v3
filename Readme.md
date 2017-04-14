@@ -3,7 +3,7 @@
 -----------
 
 ## 2.then build the one_hot and zero_hot dataset from original office-datasets
-### ./build_data_set.sh     your_path_of_office-datasets
+### ./build_data_set.sh     dataSets/
 -----------
 -----------
 ## 3.download  inception_v3.ckpt  from  http://download.tensorflow.org/models/inception_v3_2016_08_28.tar.gz
@@ -19,7 +19,7 @@
 
 
 ## 5.change some area of my_inception_v3.py
-### before run ,please change the checkpoint_path and dataset_path to be yours
+### before run ,please ensure the checkpoint_path and dataset_path is right 
 -----------
 -----------
 
@@ -35,10 +35,11 @@
 
 
 ## 7.one-shot 
+### please ensure these in my_inception_v3.py
 #### path_train=paths_target_train
 #### path_test =paths_target_test
 #### checkpoint_exclude_scopes=None 
-### use the above settiings,   python ./my_inception_v3.py
+### after ensure   python ./my_inception_v3.py
 -----------
 -----------
 

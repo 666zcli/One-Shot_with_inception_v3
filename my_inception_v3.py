@@ -21,8 +21,8 @@ test_times  = 5         # 测试集合的batch次数，取决与测试集合的�
 
 
 ##### checkpoint_path(模型参数保存路径) 和  dataset_path (数据集路径)
-checkpoint_path="/home/gui/work2017/ckpt_data/inception_v3_ckpt/inception_v3.ckpt"
-dataset_path   ='/home/gui/work2017/Research_of_DA/dataSets/office-dataset/'
+checkpoint_path="./ckpt/inception_v3.ckpt"
+dataset_path   ='./dataSets/'
 
 
 ##### create 4 dirs
