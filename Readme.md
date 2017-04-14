@@ -9,13 +9,13 @@
 
 
 
-#4.依赖库(Dependent library)
+# 4.依赖库(Dependent library)
 ## tensorflow
 ## scipy
 ## numpy
 
 
-#5.change some area of my_inception_v3.py
+# 5.change some area of my_inception_v3.py
 
 ## 运行程序之前先修改my_inception_v3.py中的 checkpoint_path 和 dataset_path
 ###  (before run ,please change the checkpoint_path and dataset_path to be yours)
@@ -24,7 +24,7 @@
 
 
 
-#6.zero-shot
+# 6.zero-shot
 ##必须先做zero-shot实验,在my_inception_v3.py中确认设置如下
 ###  (must do zero-shot first ,please ensure these in my_inception_v3.py)
 ####path_train=paths_source
@@ -36,7 +36,7 @@
 
 
 
-#7.one-shot 
+# 7.one-shot 
 ####path_train=paths_target_train
 ####path_test =paths_target_test
 ####checkpoint_exclude_scopes=None 
