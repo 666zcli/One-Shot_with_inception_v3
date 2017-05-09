@@ -10,14 +10,18 @@ def create_paths(dataset_path):
             'laptop_computer', 'mobile_phone', 'mouse', 'printer', 'projector', 'ring_binder', 'ruler', 'speaker','trash_can']
     # create 4 dirs
     paths_source=[];
+<<<<<<< HEAD
     paths_source_train=[];
     paths_source_test =[];
 
+=======
+>>>>>>> 22b64def45f9776969700b9cb23bb657a4a2106e
     paths_target=[];
     paths_target_train=[];
     paths_target_test =[];
     for cate in cate_Li:
         dir0=dataset_path+'amazon_source/'+cate+'/'
+<<<<<<< HEAD
         dir1=dataset_path+'amazon_source_train/'+cate+'/'
         dir2=dataset_path+'amazon_source_test/'+cate+'/'
         dir3=dataset_path+'webcam_target/'+cate+'/'
@@ -30,6 +34,16 @@ def create_paths(dataset_path):
         paths_target_train.append(dir4)
         paths_target_test.append(dir5)
     return paths_source,paths_source_train,paths_source_test,paths_target,paths_target_train,paths_target_test
+=======
+        dir1=dataset_path+'webcam_target/'+cate+'/'
+        dir2=dataset_path+'webcam_target_train/'+cate+'/'
+        dir3=dataset_path+'webcam_target_test/'+cate+'/'
+        paths_source.append(dir0)
+        paths_target.append(dir1)
+        paths_target_train.append(dir2)
+        paths_target_test.append(dir3)
+    return paths_source,paths_target,paths_target_train,paths_target_test
+>>>>>>> 22b64def45f9776969700b9cb23bb657a4a2106e
 
 
 
@@ -44,10 +58,15 @@ def get_data(paths,size):
 
 
 def main(dataset_path,size):
+<<<<<<< HEAD
     paths_source,paths_source_train,paths_source_test,paths_target,paths_target_train,paths_target_test=create_paths(dataset_path)
     get_data(paths_source,size)
     get_data(paths_source_train,size)
     get_data(paths_source_test,size)
+=======
+    paths_source,paths_target,paths_target_train,paths_target_test=create_paths(dataset_path)
+    get_data(paths_source,size)
+>>>>>>> 22b64def45f9776969700b9cb23bb657a4a2106e
     get_data(paths_target,size)
     get_data(paths_target_train,size)
     get_data(paths_target_test,size)
