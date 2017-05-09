@@ -11,8 +11,11 @@
 
 ### 4.Dependent library
 > tensorflow
+
 > scipy
+
 > numpy
+
 > fire
 -----------
 -----------
@@ -27,7 +30,9 @@
 ### 6.zero-shot
 #### must do zero-shot first ,please ensure these in my_inception_v3.py
 > path_train=paths_source
+
 > path_test =paths_target_test
+
 > checkpoint_exclude_scopes="InceptionV3/Logits,InceptionV3/AuxLogits"
 #### after ensure , python ./my_inception_v3.py
 -----------
@@ -37,7 +42,9 @@
 ### 7.one-shot 
 #### please ensure these in my_inception_v3.py
 > path_train=paths_target_train
+
 > path_test =paths_target_test
+
 > checkpoint_exclude_scopes=None 
 #### after ensure   python ./my_inception_v3.py
 -----------
